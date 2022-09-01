@@ -1,0 +1,22 @@
+body
+{
+    background-color: #253239;
+    margin: 0px;
+}
+
+
+.barra_esquerda
+{
+    background-color: #1A2327;
+    position: absolute;
+    margin: 0px;
+    width: 15%;
+    height: 100%;
+}
+
+.barra_topo
+{
+    background-color: #1A2327;
+    position: absolute;
+    
+}
