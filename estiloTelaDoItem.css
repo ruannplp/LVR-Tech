@@ -1,0 +1,140 @@
+body
+{
+    background-color: #253239;
+    margin: 0px;
+}
+
+
+#barra_esquerda
+{
+    background-color: #1A2327;
+    position: absolute;
+    margin: -1%;
+    width: 15%;
+    height: 102%;
+}
+
+#barratopo
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 530%;
+    height: 10%;
+    top: 0%;
+    left: 120%;
+    border-radius: 20px;
+}
+
+#texto_iniciar
+{
+    position: absolute;
+    height: 2%;
+    left: 10%;
+    top: 10%;
+    color: #9A9A9D;
+
+}
+
+#barradejogos
+{
+    position: absolute;
+    height: 5%;
+    left: 12%;
+    top: 30%;
+
+}
+
+#retangulodomeio
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 43%;
+    height: 50%;
+    top: 20%;
+    left: 23%;
+    border-radius: 20px;
+}
+
+#retangulodadireita
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 23%;
+    height: 75%;
+    top: 20%;
+    left: 70%;
+    border-radius: 20px;
+}
+
+#imagens    
+{
+    margin: 5px;
+}
+
+#primeiroretangulopequeno
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 73%;
+    left: 23%;
+    border-radius: 20px;
+}
+
+#segundoretangulopequeno
+
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 73%;
+    left: 38%;
+    border-radius: 20px;
+}
+
+#terceiroretangulopequeno
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 73%;
+    left: 53%;
+    border-radius: 20px;
+}
+
+#primeiroretangulopequenodadireita
+{
+    background-color: #13191C;
+    position: absolute;
+    width: 85%;
+    height: 7%;
+    top: 69%;
+    left: 9%;
+    border-radius: 20px;
+}
+
+#segundoretangulopequenodadireita
+{
+    background-color: #13191C;
+    position: absolute;
+    width: 85%;
+    height: 7%;
+    top: 79%;
+    left: 9%;
+    border-radius: 20px;
+}
+
+#terceiroretangulopequenodadireita
+{
+    background-color: #3B0AFF;
+    position: absolute;
+    width: 85%;
+    height: 7%;
+    top: 89%;
+    left: 9%;
+    border-radius: 20px;
+}
+
