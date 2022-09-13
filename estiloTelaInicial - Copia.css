@@ -1,0 +1,13 @@
+body
+{
+    margin: 0px;
+}
+
+#tela_inteira
+{
+    position: absolute;
+    background-color: #253239;  
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,17 +1,26 @@
 body
 {
-    background-color: #253239;
+
     margin: 0px;
 }
 
-
-.barra_esquerda
+#tela_inteira
 {
-    background-color: #1A2327;
+    background-color: #253239;  
+    width: 100%;
+    height: 100%;
+}
+
+
+#barra_esquerda
+{
+    background-color: #1A2327; 
     position: absolute;
     margin: 0px;
     width: 15%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .barra_topo
@@ -19,4 +28,23 @@ body
     background-color: #1A2327;
     position: absolute;
     
+}
+
+#foto_perfil
+{
+    position: absolute;
+    width: 50%;
+    height: 15%;
+    background-color: red;
+    left: 23%;
+    top: 10%;
+    border-radius: 100%;
+}
+
+
+
+#texto_iniciar
+{
+    position: absolute;
+    top: 50px;
 }
