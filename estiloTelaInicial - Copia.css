@@ -18,3 +18,16 @@ body
     background-color: #1A2327;
     border-radius: 0px 0px 20px 20px;
 }
+
+#imagem
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#filtro
+{
+    border-width: 2px;
+    border-color: #242e33;
+}
