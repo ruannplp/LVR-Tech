@@ -1,6 +1,7 @@
 body
 {
     margin: 0px;
+    padding: 0px;
 }
 
 #tela_inteira
@@ -30,4 +31,20 @@ body
 {
     border-width: 2px;
     border-color: #242e33;
+}
+
+#foto_perfil
+{
+    width: 100px;
+    height: 100px;
+}
+
+#quadrado
+{
+    background: #1A2327;
+    width: 200px;
+    height: 140px;
+    margin: 10px;
+    border-radius: 10px;
+
 }
