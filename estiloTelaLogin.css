@@ -1,16 +1,20 @@
 body{
     background-color: #1A2327;
-    margin: 0px;
+}
+
+#upText{
+    top: 12%;
 }
 
 #divLogin{
     background: #253239;
     display: flex;
-    height: 70%;
-    width: 30%;
+    height: 85%;
+    width: 33%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    top: 10%;
     border-radius: 20px;
     padding: 20px;
 }
