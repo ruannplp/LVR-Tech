@@ -1,0 +1,43 @@
+#nomeSkin {
+    top: 34%;
+    left: 30%;
+}
+
+#botaoComprar {
+    top: 34.5%;
+    right: 10%;
+}
+
+#trash{
+    top: 30%;
+    right: 3.3%;
+    font-size: 38px;
+}
+
+#barra_navegacao
+{
+    width: 80%; 
+    height: 80px; 
+    background-color: #1A2327;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#divComprar{
+    left: 21%;
+    top: 13%;
+}
+
+#tela_inteira
+{
+    position: absolute;
+    background-color: #253239;  
+    width: 100.8%;
+    height: 100%;
+}
+
+#imagem
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
