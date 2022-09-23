@@ -68,8 +68,41 @@ body
 
 #imagens    
 {
-    margin: 5px;
+    margin-top: -10px;
 }
+
+#texto_selecionar_jogo
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_selecionar_raridade
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_valor
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_adicionar
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_descricao
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
 
 #primeiroretangulopequeno
 {
@@ -108,12 +141,13 @@ body
 #primeiroretangulopequenodadireita
 {
     background-color: #13191C;
-    position: absolute;
     width: 85%;
     height: 7%;
-    top: 69%;
-    left: 9%;
-    border-radius: 20px;
+    top: 60%;
+    left: 8%;
+    position: absolute;
+    color: #9A9A9D;
+    border-radius: 10px;
 }
 
 #segundoretangulopequenodadireita
@@ -122,21 +156,48 @@ body
     position: absolute;
     width: 85%;
     height: 7%;
-    top: 79%;
-    left: 9%;
-    border-radius: 20px;
+    
+    top: 70%;
+    left: 8%;
+    color: #9A9A9D;
+    border-radius: 10px;
+
 }
 
 #terceiroretangulopequenodadireita
 {
-    background-color: #3B0AFF;
-    position: absolute;
+    background-color: #13191C;
+    position: absolute; 
     width: 85%;
     height: 7%;
-    top: 89%;
-    left: 9%;
-    border-radius: 20px;
+    top: 80%;
+    left: 8%;
+    color: #9A9A9D;
+    border-radius: 10px;
 }
 
+#quartoretangulopequenodadireita
+{
+    background-color: #3B0AFF;
+    position: absolute; 
+    width: 85%;
+    height: 7%;
+    top: 90%;
+    left: 8%;
+    color: #000000;
+    border-radius: 10px;
+}
+
+#retangulodentro
+{
+    background-color: #13191C;
+    position: absolute;
+    width: 74%;
+    height: 50%;
+    top: 5%;
+    left: 13%;
+    color: #9A9A9D;
+    border-radius: 10px;
+}
 
 
