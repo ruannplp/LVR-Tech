@@ -2,6 +2,35 @@ body
 {
     background-color: #253239;
     margin: 0px;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#tela_inteira
+{
+    position: absolute;
+    background-color: #253239;  
+    width: 100.8%;
+    height: 100%;
+}
+#imagem
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+#barra_navegacao
+{
+    width: 80%; 
+    height: 80px; 
+    background-color: #1A2327;
+    border-radius: 0px 0px 20px 20px;
 }
 
 
@@ -73,30 +102,35 @@ body
 
 #texto_selecionar_jogo
 {
+    margin-top: 8px;
     font-size: 20px;
     text-align: center;
 }
 
 #texto_selecionar_raridade
 {
+    margin-top: 8px;
     font-size: 20px;
     text-align: center;
 }
 
 #texto_valor
 {
+    margin-top: 8px;
     font-size: 20px;
     text-align: center;
 }
 
 #texto_adicionar
 {
+    margin-top: 8px;
     font-size: 20px;
     text-align: center;
 }
 
 #texto_descricao
 {
+    margin-top: 10px;
     font-size: 15px;
     text-align: center;
 }
