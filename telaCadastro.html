@@ -17,33 +17,36 @@
     <div class="container justify-content-center">
         <div id="divLogin" class="position-absolute rounded-4">
             <div class="col position-absolute p-2">
-                <form>
                     <h1 class="text-center text-muted">Cadastre-se!</h1>
+                <form action="inserir.php" method="POST">
+                    
                 <br><br>
                     <div class="form-group mb-3">
                         <h5 class="text-light text-left">Usuário:</h5>
-                        <input class="form-control" type="text" placeholder="Usuário" />
+                        <input class="form-control" type="text" name="usuario" placeholder="Usuário" />
                     </div>
                     <div class="form-group mb-3">
                         <h5 class="text-light text-left">E-mail:</h5>
-                        <input class="form-control" type="text" placeholder="E-mail" />
+                        <input class="form-control" type="text" name="email" placeholder="E-mail" />
                     </div>
                     <div class="form-group mb-3">
                         <h5 class="text-light">Senha:</h5>
-                        <input class="form-control" type="password" placeholder="Senha" />
+                        <input class="form-control" type="password" name="senha" placeholder="Senha" />
                         <small class="form-text text-muted">Nunca compartilharemos sua senha com ninguém</small>
                     </div>
+                    <div class="text-center mb-2">
+                        <input class="btn btn-dark" type="submit" value="Cadastre-se" />
+                    </div>
                 </form>
+
                 <br>
                 <div>
-                    <a href="telaCadastro.html" class="text-decoration-none text-white">
-                        <h5 class="text-center">Não possui uma conta ainda?</h1>
+                    <a href="telaLogin.html" class="text-decoration-none text-white">
+                        <h5 class="text-center">Já possui uma conta?</h1>
                     </a>
                 </div>
                 <br>
-                <div class="text-center mb-2">
-                    <input class="btn btn-dark" type="button" value="Cadastre-se" />
-                </div>
+                
 
             </div>
         </div>
