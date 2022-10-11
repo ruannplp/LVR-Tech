@@ -19,7 +19,7 @@
 
 
 
-
+ 
         if($resultado['senha_usuario'] == MD5($set_senha)){
             header("location:telaLOL.html");
 
@@ -29,17 +29,20 @@
             $_SESSION['loggedin'] = true; 
 
         }else{
-            echo("Email ou Senha incorreto!");
+            echo(PopUp());
         }
 
     }else{
-        echo("Email ou Senha incorreto!");
+        echo(PopUp());
     }
+
+
 
 
 
 
     unset($comando);
     unset($pdo);
+
 
 ?>

@@ -172,6 +172,20 @@ a
     border-radius: 20px;
 }
 
+#nomeItem
+{
+    background-color: #13191C;
+    width: 85%;
+    height: 7%;
+    top: 50%;
+    left: 8%;
+
+    border-style: none;
+    position: absolute;
+    color: #9A9A9D;
+    border-radius: 10px;
+}
+
 #primeiroretangulopequenodadireita
 {
     background-color: #13191C;
@@ -179,6 +193,7 @@ a
     height: 7%;
     top: 60%;
     left: 8%;
+    border-color: #13191c;
     position: absolute;
     color: #9A9A9D;
     border-radius: 10px;
@@ -206,6 +221,7 @@ a
     height: 7%;
     top: 80%;
     left: 8%;
+    border-style: none;
     color: #9A9A9D;
     border-radius: 10px;
 }
@@ -227,9 +243,10 @@ a
     background-color: #13191C;
     position: absolute;
     width: 74%;
-    height: 50%;
+    height: 10px;
     top: 5%;
     left: 13%;
+    
     color: #9A9A9D;
     border-radius: 10px;
 }

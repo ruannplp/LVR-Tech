@@ -54,29 +54,59 @@
 
     </div>
 
-    <div id="retangulodomeio">
 
-            <div class="adicionar_imagem"> 
-            </div>
+<form action="inserirItem.php" method="POST">
+    <div id="retangulodomeio" class="text-center">
+
+    </div>
+
+
+          
 
     </div>
     
 
     <div id="retangulodadireita"> 
 
-            <div id="retangulodentro"> <h1 id="texto_descricao"> Escreva aqui a descrição do item! </h1> </div>
+        
 
 
-            <div  id="primeiroretangulopequenodadireita"> <h1 id="texto_selecionar_jogo"> Selecionar Jogo </h1> </div>
+           <input class="text-center" type="text" id="nomeItem" placeholder="Nome Item" name="nome_item">
 
-            <div  id="segundoretangulopequenodadireita">  <h1 id="texto_selecionar_raridade"> Selecionar Raridade </h1> </div>
 
-            <div  id="terceiroretangulopequenodadireita">  <h1 id="texto_valor"> Insira o valor do item </h1> </div>
+           <select id="primeiroretangulopequenodadireita" class="text-center" style="border-color: #13191C" name="nome_jogo">
 
-            <div  id="quartoretangulopequenodadireita">  <h1 id="texto_adicionar"> Adicionar Item </h1>  </div>
+                <option value="Selecionar" disabled selected> Selecionar Jogo </option>
+                <option value="LeagueOfLegends"> League Of Legends </option>
+                <option value="Valorant"> Valorant </option>
+                <option value="CSGO"> CSGO </option>
+                <option value="RocketLeague"> Rocket League </option>
+
+
+           </select>
+
+           
+           <select id="segundoretangulopequenodadireita" class="text-center" style="border-color: #13191C" name="raridade">
+
+                <option value="Selecionar" disabled selected> Selecionar Raridade </option>
+                <option value="Comum"> Comum </option>
+                <option value="Incomum"> Incomum </option>
+                <option value="Raro"> Raro </option>
+                <option value="Epico"> Epico </option>]
+                <option value="Lendario"> Lendário </option>
+                <option value="Mitico"> Mítico </option>
+
+
+           </select>
+
+           <input type="text" id="retangulodentro" class="text-center" placeholder="Insira aqui a descrição do item" style="height: 40%; border-style:none;" name="descricao">  </input>
+
+           <input class="text-center" type="text" id="terceiroretangulopequenodadireita" placeholder="Valor Item" name="valor">
+
+            <input id="quartoretangulopequenodadireita" class="btn btn-dark" type="submit" value="Adicionar Item" />
     </div>
 
-
+    
 
 
 
@@ -88,6 +118,10 @@
 
     <div id="terceiroretangulopequeno"> </div>
 
+</form>
+
+
 </div>
 </body>
+
 </html>
