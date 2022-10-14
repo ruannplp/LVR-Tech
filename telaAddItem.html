@@ -7,67 +7,107 @@
     <title>Tela do Item</title>
     <link rel="stylesheet" href="estiloTelaAddItem.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
+<div class="row" id="tela_inteira">
+        <div class="col-2 text-center" style="background-color: #1A2327;">
+                <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5"  alt="sem foto">
+                <h5 class="h5    mt-2" style="color: #9A9A9D">Iniciar Sessão</h5>
 
-    <div id="barra_esquerda"> 
+                <select id="filtro" class="text-center form-select w-75 mx-auto fs-6 fw-bold mt-5 " aria-label="Default select example" style="background-color: #13191C; color: #9A9A9D">
+                        <option disabled selected>Ordenar por</option>
+                        <option value="1">Mais Barato</option>
+                        <option value="2">Mais Caro</option>
+                        <option value="3">Novidades</option>
+                </select>
 
-        <h1 id=texto_iniciar>Iniciar Sessão</h1>
-
-        <div class="foto_perfil">
 
 
-    </div>
 
-    <div id="barratopo">
-
-            <div id="barradejogos">
+        </div>
         
-                    <img id="imagens" src="imagens/league_of_legends.png">
-            
-                    <img id="imagens" src="imagens/csgo.png">
-            
-                    <img id="imagens" src="imagens/dota2.png">
-            
-                    <img id="imagens" src="imagens/valorant.png">
-            
-                    <img id="imagens" src="imagens/rocket_league.png">
-            
-            </div>
+        <div class="col-10 mx-0" style="background-color: #253239;">
+            <div class="row justify-content-center" id="area_util">
+                <div class="text-center py-3" id="barra_navegacao" >
+
+                    <a href="telaCSGO.html" style="text-decoration: none;">
+                    <img id="imagem" src="imagens/csgo.png">
+                    </a>
+
+                    <a href="telaLOL.html" style="text-decoration: none;">
+                    <img id="imagem" src="imagens/league_of_legends.png">
+                    </a>
+                    
+                    <img id="imagem" src="imagens/dota2.png">
+                 
+                    <img id="imagem" src="imagens/valorant.png">
+                 
+                    <img id="imagem" src="imagens/rocket_league.png">
+                </div>
+
 
     </div>
 
 
+<form action="inserirItem.php" method="POST" enctype="multipart/form-data">
+    
+    <div id="retangulodomeio" class="text-center">
+        <input type="file" name="imagem" multiple accept="image/*" style="color: white;">  
     </div>
 
-    <div id="retangulodomeio">
 
-            <div class="adicionar_imagem"> 
-            </div>
+          
 
     </div>
     
 
     <div id="retangulodadireita"> 
 
-            <div id="retangulodentro"> <h1 id="texto_descricao"> Escreva aqui a descrição do item! </h1> </div>
+        
 
 
-            <div  id="primeiroretangulopequenodadireita"> <h1 id="texto_selecionar_jogo"> Selecionar Jogo </h1> </div>
+           <input class="text-center" type="text" id="nomeItem" placeholder="Nome Item" name="nome_item">
 
-            <div  id="segundoretangulopequenodadireita">  <h1 id="texto_selecionar_raridade"> Selecionar Raridade </h1> </div>
 
-            <div  id="terceiroretangulopequenodadireita">  <h1 id="texto_valor"> Insira o valor do item </h1> </div>
+           <select id="primeiroretangulopequenodadireita" class="text-center" style="border-color: #13191C" name="nome_jogo">
 
-            <div  id="quartoretangulopequenodadireita">  <h1 id="texto_adicionar"> Adicionar Item </h1>  </div>
+                <option value="Selecionar" disabled selected> Selecionar Jogo </option>
+                <option value="LeagueOfLegends"> League Of Legends </option>
+                <option value="Valorant"> Valorant </option>
+                <option value="CSGO"> CSGO </option>
+                <option value="RocketLeague"> Rocket League </option>
+
+
+           </select>
+
+           
+           <select id="segundoretangulopequenodadireita" class="text-center" style="border-color: #13191C" name="raridade">
+
+                <option value="Selecionar" disabled selected> Selecionar Raridade </option>
+                <option value="Comum"> Comum </option>
+                <option value="Incomum"> Incomum </option>
+                <option value="Raro"> Raro </option>
+                <option value="Epico"> Epico </option>]
+                <option value="Lendario"> Lendário </option>
+                <option value="Mitico"> Mítico </option>
+
+
+           </select>
+
+           <input type="text" id="retangulodentro" class="text-center" placeholder="Insira aqui a descrição do item" style="height: 40%; border-style:none;" name="descricao">  </input>
+
+           <input class="text-center" type="text" id="terceiroretangulopequenodadireita" placeholder="Valor Item" name="valor">
+
+            <input id="quartoretangulopequenodadireita" class="btn btn-dark" type="submit" value="Adicionar Item" />
     </div>
 
-
+    
 
 
 
@@ -79,6 +119,10 @@
 
     <div id="terceiroretangulopequeno"> </div>
 
-    
+</form>
+
+
+</div>
 </body>
+
 </html>

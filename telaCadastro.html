@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloTelaCadastro.css">
     <title>Clk Store</title>
 
 </head>
+
 <body>
-    <h1>Seja bem-vindo(a) à Clock Store</h1>
 
-    <div id="divLogin">
-        <h1>Cadastre-se!</h1>
+    <div class="container justify-content-center">
+        <div id="divLogin" class="position-absolute rounded-4">
+            <div class="col position-absolute p-2">
+                    <h1 class="text-center text-muted">Cadastre-se!</h1>
+                <form action="inserir.php" method="POST">
+                    
+                <br><br>
+                    <div class="form-group mb-3">
+                        <h5 class="text-light text-left">Usuário:</h5>
+                        <input class="form-control" type="text" name="usuario" placeholder="Usuário" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <h5 class="text-light text-left">E-mail:</h5>
+                        <input class="form-control" type="text" name="email" placeholder="E-mail" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <h5 class="text-light">Senha:</h5>
+                        <input class="form-control" type="password" name="senha" placeholder="Senha" />
+                        <small class="form-text text-muted">Nunca compartilharemos sua senha com ninguém</small>
+                    </div>
+                    <div class="text-center mb-2">
+                        <input class="btn btn-dark" type="submit" value="Cadastre-se" />
+                    </div>
+                </form>
 
-        <input type="text" placeholder="Usuário"/>
-        <br><br>
-        <input type="text" placeholder="Email"/>
-        <br><br>
-        <input type="password" placeholder="Senha"/>
-        <br>
-        <a href="telaLogin.html" >
-            <h1>Já possui uma conta?</h1>
-        </a>
-        <br><br>
-        <input type="button" value="Login"/>
-    </div>
+                <br>
+                <div>
+                    <a href="telaLogin.html" class="text-decoration-none text-white">
+                        <h5 class="text-center">Já possui uma conta?</h1>
+                    </a>
+                </div>
+                <br>
+                
+
+            </div>
+        </div>
+
 </body>
+
 </html>
