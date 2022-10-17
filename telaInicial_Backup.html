@@ -64,36 +64,11 @@
 
 
                 <div class="row row-cols-5" style="width: 90%; margin: 0px; margin-top: -100px;">
+
+
+
                     <div class="col " id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
-                    <div class="col" id="quadrado"></div>
+
                 </div>
             </div>
             </div>
@@ -103,5 +78,22 @@
  
     </div>
 
+
+    <?php 
+                include("listarItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($ListaItens as $linha) { 
+            ?>
+                            <div class="col" id="quadrado">
+                                <?php echo '<img height="40px" width="40px" src="'.$linha['foto'].'">';?>
+
+                                <?php echo $linha['nome_item'];?>
+                            </div>
+
+            <?php
+                    }
+                }
+            ?>     
 </body>
 </html>
