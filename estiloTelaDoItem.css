@@ -19,6 +19,18 @@ body
 
 }
 
+#retangulo_descricao
+{
+    position: absolute;
+    width: 85%;
+    height: 50%;
+    top: 5%;
+    left: 9%;
+    background-color: #13191C;
+    border-radius: 10px;
+
+}
+
 #barradejogos
 {
     position: absolute;
@@ -89,18 +101,7 @@ body
     border-radius: 20px;
 }
 
-#primeiroretangulopequenodadireita
-{
-    background-color: #13191C;
-    position: absolute;
-    width: 85%;
-    height: 7%;
-    top: 69%;
-    left: 9%;
-    border-radius: 20px;
-}
-
-#segundoretangulopequenodadireita
+#retangulo_valor
 {
     background-color: #13191C;
     position: absolute;
@@ -108,18 +109,43 @@ body
     height: 7%;
     top: 79%;
     left: 9%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-#terceiroretangulopequenodadireita
+#retangulo_nomeItem
+{
+    background-color: #13191C;
+    position: absolute;
+    width: 85%;
+    height: 7%;
+    top: 59%;
+    left: 9%;
+    border-radius: 10px;
+}
+
+#retangulo_raridade
+{
+    background-color: #13191C;
+    position: absolute;
+    width: 85%;
+    height: 7%;
+    top: 69%;
+    left: 9%;
+    border-radius: 10px;
+}
+
+#retangulo_addCarrinho
 {
     background-color: #3B0AFF;
+    color: #9A9A9D;
+    font-size: 20px;
     position: absolute;
+    align-items: center;
     width: 85%;
     height: 7%;
     top: 89%;
     left: 9%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #tela_inteira

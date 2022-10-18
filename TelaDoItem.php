@@ -67,27 +67,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
 
-        
-        <div class="col-10 mx-0" style="background-color: #253239;">
-            <div class="row justify-content-center" id="area_util">
-                <div class="text-center py-3" id="barra_navegacao" >
-
-                    <a href="telaCSGO.html" style="text-decoration: none;">
-                    <img id="imagem" src="imagens/csgo.png">
-                    </a>
-
-                    <a href="telaLOL.html" style="text-decoration: none;">
-                    <img id="imagem" src="imagens/league_of_legends.png">
-                    </a>
-                    
-                    <img id="imagem" src="imagens/dota2.png">
-                 
-                    <img id="imagem" src="imagens/valorant.png">
-                 
-                    <img id="imagem" src="imagens/rocket_league.png">
-                </div>
-
-
 
 
 
@@ -131,9 +110,25 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </div>
 
 
-            <div  id="primeiroretangulopequenodadireita"> 
+            <div id="retangulo_valor"> 
+            <div style="color: #9A9A9D;position: absolute; width: 100%; height: 100%; top: 15%; font-size: 20px;" class="text-center">
+            <?php 
+            include("listaUmItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
             
-            <div style="color: #9A9A9D;position: absolute; width: 100%; height: 100%; top: 7px;" class="text-center">
+                        echo"<p style='color: #9A9A9D'> R$".$linha['valor']."</p>";
+
+                    }
+                }
+            ?>      
+            </div>
+            </div>
+
+            <div  id="retangulo_nomeItem"> 
+            
+            <div style="color: #9A9A9D;position: absolute; width: 100%; height: 100%; top: 15%; font-size: 20px;" class="text-center">
             <?php 
             include("listaUmItem.php");
 
@@ -150,9 +145,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
             </div>
 
-            <div id="segundoretangulopequenodadireita">
+            <div id="retangulo_raridade">
             
-            <div style="color: #9A9A9D;position: absolute; width: 100%; height: 100%; top: 7px;" class="text-center">
+            <div style="color: #9A9A9D;position: absolute; width: 100%; height: 100%; top: 15%; font-size: 20px;" class="text-center">
             <?php 
             include("listaUmItem.php");
 
@@ -168,7 +163,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
             </div>
 
-            <div id="terceiroretangulopequenodadireita"> </div>
+            <div class="text-center" id="retangulo_addCarrinho"> Adicionar ao carrinho! </div>
 
         
     </div>
