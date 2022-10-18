@@ -1,3 +1,12 @@
+<?php
+session_start();
+// Verifique se o usuário está logado, se não, redirecione-o para uma página de login
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: TelaLogin.html");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +25,23 @@
 
 </head>
 <body>
+
     <div class="row" id="tela_inteira">
         <div class="col-2 text-center" style="background-color: #1A2327;">
                 <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5"  alt="sem foto">
-                <h5 class="h5    mt-2" style="color: #9A9A9D">Iniciar Sessão</h5>
+    <?php
+
+            include("listar_usuario_conectado.php");
+
+            echo"<p style='color: #9A9A9D'> ".$info_usuarios['usuario_nome']."</p>";
+
+    ?>
+
+
+<form action="sair.php" method="POST" enctype="multipart/form-data">
+    <input type="submit" class="btn"href="sair.php" value="Sair" style="color: white">
+</form>
+
 
                 <select id="filtro" class="text-center form-select w-75 mx-auto fs-6 fw-bold mt-5 " aria-label="Default select example" style="background-color: #13191C; color: #9A9A9D">
                         <option disabled selected>Ordenar por</option>
@@ -72,7 +94,7 @@
                 if (!empty($listaItens)) {
                     foreach($listaItens as $linha) { 
             ?>
-                            <div class="col" id="quadrado">    <?php echo $linha['nome_item'];?> <br> <?php echo '<img height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div>
+                           <a style="text-decoration: none" href="telaDoItem.php?id_item=<?php echo $linha['id_item'];?>"> <div class="col" id="quadrado">    <?php echo $linha['nome_item'];?> <br> <?php echo '<img height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div> </a>
 
 
 

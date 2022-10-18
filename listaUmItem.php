@@ -1,7 +1,8 @@
 <?php
+
 include("conexao.php");
 
-$comando = $pdo->prepare("SELECT id_item, foto, nome_item FROM item;");
+$comando = $pdo->prepare("SELECT * FROM item WHERE id_item = $id_item");
 
 $comando->execute();
 
@@ -11,5 +12,4 @@ if ($comando->rowCount() >= 1) {
     echo("Não há itens cadastrados");
 }
 
-unset($comando);
-unset($pdo);
+?>

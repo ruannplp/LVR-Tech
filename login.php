@@ -21,7 +21,7 @@
 
  
         if($resultado['senha_usuario'] == MD5($set_senha)){
-            header("location:telaLOL.html");
+            header("location:telaInicial_Backup.php");
 
             session_start();
             $_SESSION['usuario_id'] = $resultado['usuario_id'];
@@ -29,11 +29,14 @@
             $_SESSION['loggedin'] = true; 
 
         }else{
-            echo(PopUp());
+            echo ("<script>alert('Email ou senha incorretos!');</script>");
+
+
         }
 
     }else{
-        echo(PopUp());
+        echo ("<script>alert('Email ou senha incorretos!');</script>");
+
     }
 
 
