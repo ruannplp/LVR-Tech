@@ -88,10 +88,10 @@ a
 {
     background-color: #1A2327;
     position: absolute;
-    width: 23%;
+    width: 73%;
     height: 75%;
-    top: 20%;
-    left: 70%;
+    top: 15%;
+    left: 21%;
     border-radius: 20px;
 }
 
@@ -175,10 +175,10 @@ a
 #nomeItem
 {
     background-color: #13191C;
-    width: 85%;
-    height: 7%;
-    top: 50%;
-    left: 8%;
+    width: 25%;
+    height: 10%;
+    top: 10%;
+    left: 10%;
 
     border-style: none;
     position: absolute;
@@ -186,44 +186,58 @@ a
     border-radius: 10px;
 }
 
-#primeiroretangulopequenodadireita
+#retangulo_jogo
 {
     background-color: #13191C;
-    width: 85%;
-    height: 7%;
-    top: 60%;
-    left: 8%;
+    width: 25%;
+    height: 10%;
+    top: 25%;
+    left: 10%;
     border-color: #13191c;
     position: absolute;
     color: #9A9A9D;
     border-radius: 10px;
 }
 
-#segundoretangulopequenodadireita
+#retangulo_valor
 {
     background-color: #13191C;
     position: absolute;
-    width: 85%;
-    height: 7%;
-    
-    top: 70%;
-    left: 8%;
+    width: 25%;
+    height: 10%;
+    border-style: none;
+    top: 10%;
+    left: 37%;
     color: #9A9A9D;
     border-radius: 10px;
 
 }
 
-#terceiroretangulopequenodadireita
+#retangulo_raridade
 {
     background-color: #13191C;
     position: absolute; 
-    width: 85%;
-    height: 7%;
-    top: 80%;
-    left: 8%;
+    width: 25%;
+    height: 10%;
+    top: 25%;
+    left: 37%;
     border-style: none;
     color: #9A9A9D;
     border-radius: 10px;
+}
+
+#retangulo_descricao
+{
+    background-color: #13191C;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    width: 85%;
+    height: 40%;
+    padding: 25px;
+    color: #9A9A9D;
+    border-radius: 10px;
+    text-align:start
 }
 
 #quartoretangulopequenodadireita
@@ -238,17 +252,27 @@ a
     border-radius: 10px;
 }
 
-#retangulodentro
-{
-    background-color: #13191C;
-    position: absolute;
-    width: 74%;
-    height: 10px;
-    top: 5%;
-    left: 13%;
-    
-    color: #9A9A9D;
-    border-radius: 10px;
+
+
+input[type="file"] {
+        display: none;
 }
 
 
+label {
+    padding: 20px 10px;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #13191C;
+    color: #9A9A9D;
+    top: 10%;
+    left: 65%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+    cursor: pointer;
+}

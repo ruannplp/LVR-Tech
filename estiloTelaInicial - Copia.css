@@ -1,5 +1,6 @@
 body
 {
+    margin-top: -20px;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -52,6 +53,7 @@ a
     height: 170px;
     margin: 10px;
     border-radius: 10px;
+    color: white;
 
 }
 #barra_pesquisa

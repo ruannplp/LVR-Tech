@@ -15,7 +15,7 @@
 
 
 
-    $comando = $pdo -> prepare("INSERT INTO item(nome_item,jogo_item,raridade,descricao,valor,foto_item) VALUES(:nome_item,:nome_jogo,:raridade,:descricao,:valor,:conteudo)");
+    $comando = $pdo -> prepare("INSERT INTO item(nome_item,jogo_item,raridade,descricao,valor,foto) VALUES(:nome_item,:nome_jogo,:raridade,:descricao,:valor,:conteudo)");
 
     $comando->bindValue(":nome_item",$nome_item); 
     $comando->bindValue(":nome_jogo",$nome_jogo); 

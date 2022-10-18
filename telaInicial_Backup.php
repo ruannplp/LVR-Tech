@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tela do Item</title>
-    <link rel="stylesheet" href="estiloTelaAddItem.css">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="estiloTelaInicial - Copia.css"> 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
@@ -13,10 +13,10 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-</head>
 
+</head>
 <body>
-<div class="row" id="tela_inteira">
+    <div class="row" id="tela_inteira">
         <div class="col-2 text-center" style="background-color: #1A2327;">
                 <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5"  alt="sem foto">
                 <h5 class="h5    mt-2" style="color: #9A9A9D">Iniciar Sessão</h5>
@@ -53,73 +53,45 @@
                 </div>
 
 
-    </div>
+
+                <div class="input-group m-5 w-50 mb-3">
+                    <input id="barra_pesquisa" type="text" class="form-control text-center text-light"  style="background:#1A2327; " placeholder="Busque aqui o item perfeito para destruir nos games!" aria-label="" aria-describedby="button-addon2">
+                    <button id="barra_pesquisa_botao" class="btn btn-outline-secondary" style="background:#1A2327;; " type="button" id="button-addon2">Pesquisar</button>
+                  </div>
+
+                
+            <div class="container text-center" style="margin-top: 120px; margin-left: 180px;">
 
 
-<form action="inserirItem.php" method="POST" enctype="multipart/form-data">
-    
+                <div class="row row-cols-5" style="width: 90%; margin: 0px; margin-top: -100px;">
 
 
+                <?php 
+                include("listarItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
+            ?>
+                            <div class="col" id="quadrado">    <?php echo $linha['nome_item'];?> <br> <?php echo '<img height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div>
+
+
+
+            <?php
+                    }
+                }
+            ?>    
           
 
-    </div>
-    
-
-    <div id="retangulodadireita"> 
-
-        <label class="text-center" for="arquivo">Enviar arquivo</label>
-
-        <input type="file" id="arquivo" name="imagem" multiple accept="image/*" >  
+                </div>
+            </div>
+            </div>
 
 
-           <input class="text-center" type="text" id="nomeItem" placeholder="Nome Item" name="nome_item">
-
-
-           <select id="retangulo_jogo" class="text-center" style="border-color: #13191C" name="nome_jogo">
-
-                <option value="Selecionar" disabled selected> Selecionar Jogo </option>
-                <option value="LeagueOfLegends"> League Of Legends </option>
-                <option value="Valorant"> Valorant </option>
-                <option value="CSGO"> CSGO </option>
-                <option value="RocketLeague"> Rocket League </option>
-
-
-           </select>
-
-           
-           <select id="retangulo_raridade" class="text-center" style="border-color: #13191C" name="raridade">
-
-                <option value="Selecionar" disabled selected> Selecionar Raridade </option>
-                <option value="Comum"> Comum </option>
-                <option value="Incomum"> Incomum </option>
-                <option value="Raro"> Raro </option>
-                <option value="Epico"> Epico </option>]
-                <option value="Lendario"> Lendário </option>
-                <option value="Mitico"> Mítico </option>
-
-
-           </select>
-
-          
-
-           <input class="text-center" type="text" id="retangulo_valor" placeholder="Valor Item" name="valor">
-
-           <input type="text" id="retangulo_descricao"  placeholder="Insira aqui a descrição do item" style=" border-style:none;" name="descricao">  </input>
-
-            <input id="quartoretangulopequenodadireita" class="btn btn-dark" type="submit" value="Adicionar Item" />
+        </div>
+ 
     </div>
 
-    
+ 
 
-
-
-
-
-
-</form>
-
-
-</div>
 </body>
-
 </html>
