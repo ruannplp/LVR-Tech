@@ -79,7 +79,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 if (!empty($listaItens)) {
                     foreach($listaItens as $linha) { 
             
-                            echo '<img height="100%" width="100%" src="'.$linha['foto'].'">';
+                            echo '<img style="    border-radius: 20px;" height="100%" width="100%" src="'.$linha['foto'].'">';
 
                     }
                 }

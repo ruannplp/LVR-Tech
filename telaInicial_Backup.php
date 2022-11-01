@@ -43,6 +43,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </form>
 
 
+            
+
                 <select id="filtro" class="text-center form-select w-75 mx-auto fs-6 fw-bold mt-5 " aria-label="Default select example" style="background-color: #13191C; color: #9A9A9D">
                         <option disabled selected>Ordenar por</option>
                         <option value="1">Mais Barato</option>
@@ -61,19 +63,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div class="row justify-content-center" id="area_util">
                 <div class="text-center py-3" id="barra_navegacao" >
 
-                    <a href="telaCSGO.html" style="text-decoration: none;">
-                    <img id="imagem" src="imagens/csgo.png">
-                    </a>
 
-                    <a href="telaLOL.html" style="text-decoration: none;">
-                    <img id="imagem" src="imagens/league_of_legends.png">
-                    </a>
-                    
-                    <img id="imagem" src="imagens/dota2.png">
-                 
-                    <img id="imagem" src="imagens/valorant.png">
-                 
-                    <img id="imagem" src="imagens/rocket_league.png">
+
+                <select id="arma" class="text-center form-select mx-auto fs-6 fw-bold mt-5 " aria-label="Default select example" style="position: absolute; left: 30%; top: -3.4%; background-color: #13191C; color: #9A9A9D; width: 10%; border-style: none;" onchange="Filtrar();">
+                    <option disabled selected> Selecionar </option>
+                    <option value="ak47"> AK-47 </option>
+                    <option value="usps"> USP-S </option>
+                    <option value="m4a4"> M4A4 </option>
+                    <option value="m4a1-s"> M4A1-S </option>
+                    <option value="famas"> Famas </option>
+                    <option value="galil"> Galil AR </option>
+                    <option value="aug"> AUG </option>
+                </select>
                 </div>
 
 
@@ -99,7 +100,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 if (!empty($listaItens)) {
                     foreach($listaItens as $linha) { 
             ?>
-                           <a style="text-decoration: none" href="telaDoItem.php?id_item=<?php echo $linha['id_item'];?>"> <div class="col" id="quadrado">    <?php echo $linha['nome_item'];?> <br> <?php echo '<img height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div> </a>
+                           <a style="text-decoration: none" href="telaDoItem.php?id_item=<?php echo $linha['id_item'];?>"> <div class="col" id="quadrado">    <?php echo $linha['nome_item'];?> <br> <?php echo '<img style="    border-radius: 10px;" height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div> </a>
 
 
 
@@ -121,4 +122,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
  
 
 </body>
+
+<script>
+    function Filtrar()
+    {
+        var filtro1 = arma.value;
+
+        var url = "telaInicial_Backup.php?filtro1=" + filtro1;
+        
+        window.open(url,"_self");
+    }
+</script>
 </html>

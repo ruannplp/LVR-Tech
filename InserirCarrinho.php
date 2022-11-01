@@ -30,6 +30,6 @@
     unset($comando);
     unset($pdo);
 
-    header("Location:telaInicial_Backup.php");
+    header("Location:telaInicial_Backup.php?filtro_jogo=CSGO");
 
 ?>

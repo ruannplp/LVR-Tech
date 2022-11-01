@@ -2,8 +2,8 @@
     include("conexao.php");
 
     $nome_item = $_POST["nome_item"];
-    $nome_jogo = $_POST["nome_jogo"];
     $raridade = $_POST["raridade"];
+    $tipo_arma = $_POST["tipo_arma"];
     $descricao = $_POST["descricao"];
     $valor = $_POST["valor"];
 
@@ -15,10 +15,10 @@
 
 
 
-    $comando = $pdo -> prepare("INSERT INTO item(nome_item,jogo_item,raridade,descricao,valor,foto) VALUES(:nome_item,:nome_jogo,:raridade,:descricao,:valor,:conteudo)");
+    $comando = $pdo -> prepare("INSERT INTO item(nome_item,raridade, tipo_arma, descricao,valor,foto) VALUES(:nome_item,:raridade, :tipo_arma, :descricao,:valor,:conteudo)");
 
     $comando->bindValue(":nome_item",$nome_item); 
-    $comando->bindValue(":nome_jogo",$nome_jogo); 
+    $comando->bindValue(":tipo_arma",$tipo_arma); 
     $comando->bindValue(":raridade",$raridade); 
     $comando->bindValue(":descricao",$descricao); 
     $comando->bindValue(":valor",$valor); 

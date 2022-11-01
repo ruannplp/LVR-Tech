@@ -1,15 +1,11 @@
 body
 {
-    margin-top: -20px;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
 }
 
-a
-{
-    text-decoration: none;
-}
+
 
 #tela_inteira
 {
@@ -23,8 +19,6 @@ a
 {
     width: 80%; 
     height: 80px; 
-    padding: 0px;
-    margin: 0px;
     background-color: #1A2327;
     border-radius: 0px 0px 20px 20px;
 }
@@ -34,17 +28,6 @@ a
     margin-left: 10px;
     margin-right: 10px;
     
-}
-
-#arma
-{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    margin: 0px;
-    background-color: #13191C;
-    color: white;
-    border-style: none;
 }
 
 #filtro
@@ -62,13 +45,10 @@ a
 #quadrado
 {
     background: #1A2327;
-    width: 200px;
+    width: 18%;
     height: 170px;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 10px;
     border-radius: 10px;
-    color: white;
 
 }
 #barra_pesquisa
