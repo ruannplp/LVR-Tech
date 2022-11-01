@@ -5,6 +5,7 @@ body
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+        overflow-y: hidden;
 }
 
 
@@ -140,6 +141,7 @@ body
     color: #9A9A9D;
     font-size: 20px;
     position: absolute;
+    border-style: none;
     align-items: center;
     width: 85%;
     height: 7%;

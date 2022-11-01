@@ -41,3 +41,16 @@
     margin-right: 10px;
     
 }
+
+#quadrado
+{
+    background: #121618;
+    width: 97%;
+    height: 170px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: white;
+
+}

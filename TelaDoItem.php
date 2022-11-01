@@ -70,6 +70,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
 
+
     <div id="retangulodomeio">
 
             <?php 
@@ -87,6 +88,74 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div>
     
     
+
+    <form action="InserirCarrinho.php?id_item=<?php echo $_GET['id_item'];?>" method="POST" enctype="multipart/form-data">
+
+
+            <?php 
+                include("listaUmItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
+            ?>
+                           <input name="nome_item" class="col" id="quadrado" value="<?php echo $linha['nome_item'];?>">  
+
+
+
+            <?php
+                    }
+                }
+            ?>   
+
+            <?php 
+                include("listaUmItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
+            ?>
+                           <input name="foto" class="col" id="quadrado" value="<?php echo $linha['foto'];?>">  
+
+
+
+            <?php
+                    }
+                }
+            ?>   
+
+
+
+            <?php 
+                include("listaUmItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
+            ?>
+                           <input name="valor" class="col" id="quadrado" value="<?php echo $linha['valor'];?>">  
+
+
+
+            <?php
+                    }
+                }
+            ?>   
+
+            <?php 
+                include("listaUmItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
+            ?>
+                           <input name="raridade" class="col" id="quadrado" value="<?php echo $linha['raridade'];?>">  
+
+
+
+            <?php
+                    }
+                }
+            ?>   
+
+
+
 
 
     <div id="retangulodadireita"> 
@@ -110,8 +179,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </div>
 
 
-            <div id="retangulo_valor"> 
+            <div id="retangulo_valor" > 
             <div style="color: #9A9A9D;position: absolute; width: 100%; height: 100%; top: 15%; font-size: 20px;" class="text-center">
+            
             <?php 
             include("listaUmItem.php");
 
@@ -122,7 +192,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
                     }
                 }
-            ?>      
+            ?>
             </div>
             </div>
 
@@ -163,8 +233,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
             </div>
 
-            <div class="text-center" id="retangulo_addCarrinho"> Adicionar ao carrinho! </div>
-
+            <input type="submit" class="btn text-center" id="retangulo_addCarrinho" value="Adicionar ao carrinho!">
+</form>
         
     </div>
 

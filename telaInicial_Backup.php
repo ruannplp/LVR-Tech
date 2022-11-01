@@ -36,7 +36,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             echo"<p style='color: #9A9A9D'> ".$info_usuarios['usuario_nome']."</p>";
 
     ?>
-
+                <a href="telaCompra.php"> <div style="width: 50px; height: 50px; position: absolute; top: 93%; left: 12.9%; "> <img src="imagens/carrinho.png" width="100%" height="100%"> </div> </a>
 
 <form action="sair.php" method="POST" enctype="multipart/form-data">
     <input type="submit" class="btn"href="sair.php" value="Sair" style="color: white">
@@ -49,6 +49,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <option value="2">Mais Caro</option>
                         <option value="3">Novidades</option>
                 </select>
+
+
 
 
 
@@ -75,6 +77,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </div>
 
 
+                
+
+
 
                 <div class="input-group m-5 w-50 mb-3">
                     <input id="barra_pesquisa" type="text" class="form-control text-center text-light"  style="background:#1A2327; " placeholder="Busque aqui o item perfeito para destruir nos games!" aria-label="" aria-describedby="button-addon2">
@@ -84,7 +89,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 
             <div class="container text-center" style="margin-top: 120px; margin-left: 180px;">
 
-
+ 
                 <div class="row row-cols-5" style="width: 90%; margin: 0px; margin-top: -100px;">
 
 
