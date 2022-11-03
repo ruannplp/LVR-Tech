@@ -28,6 +28,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
     <div class="row" id="tela_inteira">
         <div class="col-2 text-center" style="background-color: #1A2327;">
+        <a href="telaInicial_Backup.php?filtro1=1"><img src="imagens/logo.png" width="100%"  alt="sem foto"></a>
+
+
                 <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5"  alt="sem foto">
     <?php
 
@@ -66,7 +69,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
                 <select id="arma" class="text-center form-select mx-auto fs-6 fw-bold mt-5 " aria-label="Default select example" style="position: absolute; left: 30%; top: -3.4%; background-color: #13191C; color: #9A9A9D; width: 10%; border-style: none;" onchange="Filtrar();">
-                    <option disabled selected> Selecionar </option>
+                    <option disabled selected> Armas </option>
                     <option value="ak47"> AK-47 </option>
                     <option value="usps"> USP-S </option>
                     <option value="m4a4"> M4A4 </option>
@@ -75,6 +78,22 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <option value="galil"> Galil AR </option>
                     <option value="aug"> AUG </option>
                 </select>
+
+
+                
+
+                <select id="faca" class="text-center form-select mx-auto fs-6 fw-bold mt-5" aria-label="Default select example" style="position: absolute; left: 42%; top: -3.4%; background-color: #13191C; color: #9A9A9D; width: 10%; border-style: none;" onchange="Filtrar();">
+                    <option disabled selected> Facas </option>
+                    <option value="karambit"> Karambit </option>
+                    <option value="butterfly"> Butterfly </option>
+                    <option value="baioneta"> M9 Baioneta </option>
+                    <option value="flipknife"> Flip Knife </option>
+                    <option value="shadowdaggers"> Shadow Daggers </option>
+                    <option value="talonknife"> Talon Knife </option>
+                    <option value="ursusknife"> Ursus Knife </option>
+                </select>
+
+
                 </div>
 
 
@@ -95,12 +114,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
                 <?php 
-                include("listarItem.php");
+                include("filtrarItem.php");
 
                 if (!empty($listaItens)) {
                     foreach($listaItens as $linha) { 
             ?>
-                           <a style="text-decoration: none" href="telaDoItem.php?id_item=<?php echo $linha['id_item'];?>"> <div class="col" id="quadrado">    <?php echo $linha['nome_item'];?> <br> <?php echo '<img style="    border-radius: 10px;" height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div> </a>
+                           <a style="text-decoration: none" href="telaDoItem.php?id_item=<?php echo $linha['id_item'];?>"> <div class="col" id="quadrado">    <h6 style="position: absolute "> <?php echo $linha['nome_item'];?> </h6> <br> <?php echo '<img style=" border-radius: 10px;" height="100%" width="100%" src="'.$linha['foto'].'">';?>   </div> </a>
 
 
 

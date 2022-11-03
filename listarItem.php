@@ -1,9 +1,9 @@
 <?php
 include("conexao.php");
 
-$item = $_GET["filtro1"];
 
-$comando = $pdo->prepare("SELECT id_item, foto, nome_item FROM item WHERE tipo_arma = '$item'");
+
+$comando = $pdo->prepare("SELECT id_item, foto, nome_item FROM item");
 
 $comando->execute();
 

@@ -47,6 +47,17 @@ a
     border-style: none;
 }
 
+#faca
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    background-color: #13191C;
+    color: white;
+    border-style: none;
+}
+
 #filtro
 {
     border-width: 0px;
