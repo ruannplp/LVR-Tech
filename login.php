@@ -21,7 +21,7 @@
 
  
         if($resultado['senha_usuario'] == MD5($set_senha)){
-            header("location:telaInicial_Backup.php");
+            header("location:telaInicial_Backup.php?filtro1=1");
 
             session_start();
             $_SESSION['usuario_id'] = $resultado['usuario_id'];
