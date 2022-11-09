@@ -26,6 +26,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
     <div class="row" id="tela_inteira">
         <div class="col-2 text-center " style="background-color: #1A2327;">
+
+
+
+
+        <a href="telaInicial_Backup.php?filtro1=1"><img src="imagens/logo.png" width="70%"  alt="sem foto"></a>
+
+
+
+
             <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5" alt="sem foto">
 
 
@@ -43,34 +52,13 @@ echo"<p style='color: #9A9A9D'> ".$info_usuarios['usuario_nome']."</p>";
 <input type="submit" class="btn"href="sair.php" value="Sair" style="color: white">
 </form>
 
-            <select id="filtro" class="text-center form-select bg-dark w-75 mx-auto fs-6 fw-bold mt-5 "
-                aria-label="Default select example" style="color: #9A9A9D">
-                <option disabled selected>Ordenar por</option>
-                <option value="1">Mais Barato</option>
-                <option value="2">Mais Caro</option>
-                <option value="3">Novidades</option>
-            </select>
+
 
 
 
 
         </div>
 
-        <div class="col-10 mx-0" style="background-color: #253239;">
-            <div class="row justify-content-center" id="area_util">
-                <div class="text-center py-3" id="barra_navegacao">
-                    <img id="imagem" src="imagens/csgo.png">
-
-                    <img id="imagem" src="imagens/league_of_legends.png">
-
-                    <img id="imagem" src="imagens/dota2.png">
-
-                    <img id="imagem" src="imagens/valorant.png">
-
-                    <img id="imagem" src="imagens/rocket_league.png">
-                </div>
-            </div>
-        </div>
 
         <div id="divComprar" style="background-color: #1A2327;" class="mt-5 w-75 container rounded-5 py-4 px-3 position-absolute">
         <?php 
@@ -79,8 +67,22 @@ echo"<p style='color: #9A9A9D'> ".$info_usuarios['usuario_nome']."</p>";
                 if (!empty($listaCarrinho)) {
                     foreach($listaCarrinho as $linha) { 
             ?>
-                           <div class="col" id="quadrado">  <?php echo '<img height="70%" width="10%" src="'.$linha['foto'].'">';?>  <?php echo $linha['nome_item'];?> <?php echo $linha['raridade'];?> <?php echo"<p style='color: #9A9A9D'> R$".$linha['valor']."</p>";?> </div>
 
+                    <a  href="telaDoItem.php?id_item=<?php echo $linha['id_item'];?>"> 
+                        <div class="col" id="quadrado">
+
+                        
+                           <?php echo '<img style="position: fixed; margin-top: 1%;" width="10%" src="'.$linha['foto'].'">';?>  
+
+
+                           <?php echo"<p style='color: #9A9A9D; position: fixed; left: 35%; margin-top: 3.7%;'>".$linha['nome_item']."</p>";?> 
+
+                            <?php echo"<p style='color: #9A9A9D; position: fixed; left: 86%; margin-top: 5.5%;'> R$".$linha['valor']."</p>";?> 
+
+
+                            <button style="position: fixed;left: 85%; background-color: #2907B2; color: white; margin-top: 3.6%;" type="button" class="btn"> Comprar </button>
+                        </div>
+                    </a>       
 
 
             <?php

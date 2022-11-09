@@ -33,6 +33,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <div class="col-2 text-center" style="background-color: #1A2327; height: 100%; width: 16.06%">
 
+<a href="telaInicial_Backup.php?filtro1=1"><img src="imagens/logo.png" width="70%"  alt="sem foto"></a>
+<br>
 
         <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5"  alt="sem foto">
 
@@ -51,12 +53,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </form>
 
 
-                <select id="filtro" class="text-center form-select w-75 mx-auto fs-6 fw-bold mt-5 " aria-label="Default select example" style="background-color: #13191C; color: #9A9A9D">
-                        <option disabled selected>Ordenar por</option>
-                        <option value="1">Mais Barato</option>
-                        <option value="2">Mais Caro</option>
-                        <option value="3">Novidades</option>
-                </select>
+
 
 
 
@@ -71,7 +68,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
 
-    <div id="retangulodomeio">
+    <div class="text-center" id="retangulodomeio">
 
             <?php 
             include("listaUmItem.php");
@@ -79,7 +76,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 if (!empty($listaItens)) {
                     foreach($listaItens as $linha) { 
             
-                            echo '<img style="    border-radius: 20px;" height="100%" width="100%" src="'.$linha['foto'].'">';
+                            echo '<img style="border-radius: 20px; margin-top: 8%;" width="50% " src="'.$linha['foto'].'">';
 
                     }
                 }
@@ -153,6 +150,22 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     }
                 }
             ?>   
+
+<?php 
+                include("listaUmItem.php");
+
+                if (!empty($listaItens)) {
+                    foreach($listaItens as $linha) { 
+            ?>
+                           <input name="id_item" class="col" id="quadrado" value="<?php echo $linha['id_item'];?>">  
+
+
+
+            <?php
+                    }
+                }
+            ?>   
+
 
 
 
