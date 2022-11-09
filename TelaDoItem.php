@@ -31,30 +31,38 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <body>
 <div id="tela_inteira">
 
-<div class="col-2 text-center" style="background-color: #1A2327; height: 100%; width: 16.06%">
+<div class="col-2 text-center" style="background-color: #1A2327; height: 100%; width: 16.06%;     box-shadow: inset 2px 2px 100px 0px #13191D;">
 
 <a href="telaInicial_Backup.php?filtro1=1"><img src="imagens/logo.png" width="70%"  alt="sem foto"></a>
 <br>
 
-        <img id="foto_perfil" src="imagens/foto_perfil.png" class="rounded-circle mt-5"  alt="sem foto">
+<a style="text-decoration: none;" href="telaPerfil.php">
 
 
-        <?php
+    <?php
+
+            include("listar_usuario_conectado.php");
+
+            echo '<img style="height: 120px; width: 120px; border-radius: 50%; margin-top: 8%;" class="mt-3"  src="'.$info_usuarios['foto'].'"  alt="imagens/foto_perfil.png">';
+
+    ?>
+<br>
+    <?php
 
             include("listar_usuario_conectado.php");
 
             echo"<p style='color: #9A9A9D'> ".$info_usuarios['usuario_nome']."</p>";
 
-        ?>
+    ?>
+</a>
+
+<form action="sair.php" method="POST" enctype="multipart/form-data">
+<input type="submit" class="btn" href="sair.php" value="Sair" style="color: white; background-color: #13191C">
+</form>
 
 
-        <form action="sair.php" method="POST" enctype="multipart/form-data">
-            <input type="submit" class="btn"href="sair.php" value="Sair" style="color: white">
-        </form>
 
-
-
-
+<a href="telaCompra.php"> <div class="text-center" style="border-radius: 10px;width: 10%; height: 50px; position: absolute; top: 93%; left: 2.8%; color: white; background-color: #13191C; "> <p style="margin: 0px; position: absolute; left: 27.8%; top: 22%;"> Ver Carrinho </p> </div> </a>
 
 
 

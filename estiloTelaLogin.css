@@ -1,5 +1,5 @@
 body{
-    background-color: #1A2327;
+    background-color: #0E1316;
 }
 
 #upText{
@@ -17,6 +17,8 @@ body{
     top: 10%;
     border-radius: 20px;
     padding: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 .container

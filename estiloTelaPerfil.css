@@ -1,0 +1,284 @@
+body
+{
+    background-color: #0E1316;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#tela_inteira
+{
+    position: absolute;
+    background-color: #0E1316;  
+    width: 100.8%;
+    height: 100%;
+}
+#imagem
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+#barra_navegacao
+{
+    width: 80%; 
+    height: 80px; 
+    background-color: #1A2327;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+#barra_esquerda
+{
+    background-color: #1A2327;
+    position: absolute;
+    margin: -1%;
+    width: 15%;
+    height: 102%;
+
+    
+}
+
+#barratopo
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 530%;
+    height: 10%;
+    top: 0%;
+    left: 120%;
+    border-radius: 20px;
+}
+
+#texto_iniciar
+{
+    position: absolute;
+    height: 2%;
+    left: 10%;
+    top: 10%;
+    color: #9A9A9D;
+
+}
+
+#barradejogos
+{
+    position: absolute;
+    height: 5%;
+    left: 12%;
+    top: 30%;
+
+}
+
+#retangulodomeio
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 43%;
+    height: 50%;
+    top: 20%;
+    left: 23%;
+    border-radius: 20px;
+
+    
+}
+
+#retangulodadireita
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 15%;
+    left: 33%;
+    border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
+}
+
+#imagens    
+{
+    margin-top: -10px;
+}
+
+#texto_selecionar_jogo
+{
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_selecionar_raridade
+{
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_valor
+{
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_adicionar
+{
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_descricao
+{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+#primeiroretangulopequeno
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 73%;
+    left: 23%;
+    border-radius: 20px;
+}
+
+#segundoretangulopequeno
+
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 73%;
+    left: 38%;
+    border-radius: 20px;
+}
+
+#terceiroretangulopequeno
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 13%;
+    height: 17%;
+    top: 73%;
+    left: 53%;
+    border-radius: 20px;
+}
+
+#nomeItem
+{
+    background-color: #13191C;
+    width: 25%;
+    height: 10%;
+    top: 18%;
+    left: 10%;
+
+    border-style: none;
+    position: absolute;
+    color: #9A9A9D;
+    border-radius: 10px;
+}
+
+#retangulo_jogo
+{
+    background-color: #13191C;
+    width: 25%;
+    height: 10%;
+    top: 18%;
+    left: 37%;
+    border-style: none;
+    position: absolute;
+    color: #9A9A9D;
+    border-radius: 10px;
+}
+
+#retangulo_valor
+{
+    background-color: #13191C;
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    border-style: none;
+    top: 31%;
+    left: 10%;
+    color: #9A9A9D;
+    border-radius: 10px;
+
+}
+
+#retangulo_raridade
+{
+    background-color: #13191C;
+    position: absolute; 
+    width: 25%;
+    height: 10%;
+    top: 25%;
+    left: 37%;
+    border-style: none;
+    color: #9A9A9D;
+    border-radius: 10px;
+}
+
+#retangulo_descricao
+{
+    background-color: #13191C;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    width: 85%;
+    height: 40%;
+    padding: 25px;
+    color: #9A9A9D;
+    border-radius: 10px;
+    text-align:start
+}
+
+#quartoretangulopequenodadireita
+{
+    background-color: #3B0AFF;
+    position: absolute; 
+    width: 85%;
+    height: 7%;
+    top: 90%;
+    left: 8%;
+    color: #000000;
+    border-radius: 10px;
+}
+
+
+
+input[type="file"] {
+        display: none;
+}
+
+
+label {
+    padding: 20px 10px;
+    width: 25%;
+    height: 10%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #13191C;
+    color: #9A9A9D;
+    top: 38%;
+    left: 65%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+    cursor: pointer;
+}

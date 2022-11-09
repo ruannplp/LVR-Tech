@@ -1,5 +1,5 @@
 body{
-    background-color: #1A2327;
+    background-color: #0E1316;
     margin: 0px;
 }
 
@@ -12,6 +12,8 @@ body{
     align-items: center;
     justify-content: center;
     top: 7%;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 .container

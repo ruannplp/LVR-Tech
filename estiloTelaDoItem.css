@@ -1,6 +1,6 @@
 body
 {
-    background-color: #253239;
+    background-color: #151718;
         margin-top: -20px;
         margin: 0px;
         padding: 0px;
@@ -43,24 +43,28 @@ body
 
 #retangulodomeio
 {
-    background-color: #1A2327;
+    background-color: #2E393F;
     position: absolute;
     width: 43%;
     height: 50%;
     top: 20%;
     left: 23%;
     border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 #retangulodadireita
 {
-    background-color: #1A2327;
+    background-color: #2E393F;
     position: absolute;
     width: 23%;
     height: 75%;
     top: 20%;
     left: 70%;
     border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 #imagens    
@@ -70,36 +74,42 @@ body
 
 #primeiroretangulopequeno
 {
-    background-color: #1A2327;
+    background-color: #2E393F;
     position: absolute;
     width: 13%;
     height: 17%;
     top: 73%;
     left: 23%;
     border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 #segundoretangulopequeno
 
 {
-    background-color: #1A2327;
+    background-color: #2E393F;
     position: absolute;
     width: 13%;
     height: 17%;
     top: 73%;
     left: 38%;
     border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 #terceiroretangulopequeno
 {
-    background-color: #1A2327;
+    background-color: #2E393F;
     position: absolute;
     width: 13%;
     height: 17%;
     top: 73%;
     left: 53%;
     border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
 }
 
 #retangulo_valor
@@ -153,7 +163,7 @@ body
 #tela_inteira
 {
     position: absolute;
-    background-color: #253239;  
+    background-color: #13191D;  
     width: 100.8%;
     height: 100%;
 }

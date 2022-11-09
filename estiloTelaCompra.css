@@ -1,40 +1,22 @@
-#nomeSkin {
-    top: 34%;
-    left: 30%;
-}
-
-#botaoComprar {
-    top: 34.5%;
-    right: 10%;
-}
-
-#trash{
-    top: 30%;
-    right: 3.3%;
-    font-size: 38px;
-}
-
-#barra_navegacao
+body
 {
-    width: 80%; 
-    height: 80px; 
-    background-color: #1A2327;
-    border-radius: 0px 0px 20px 20px;
+    background-color: #0E1316;
+    margin: 0px;
+    overflow-x: hidden;
 }
 
-#divComprar{
-    left: 21%;
-    top: 13%;
+a
+{
+    text-decoration: none;
 }
 
 #tela_inteira
 {
     position: absolute;
-    background-color: #253239;  
+    background-color: #0E1316;  
     width: 100.8%;
     height: 100%;
 }
-
 #imagem
 {
     margin-left: 10px;
@@ -42,15 +24,70 @@
     
 }
 
+
+#barra_esquerda
+{
+    background-color: #1A2327;
+    position: absolute;
+    margin: -1%;
+    width: 15%;
+    height: 102%;
+
+    
+}
+
+
+
+#retangulodadireita
+{
+    background-color: #1A2327;
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    overflow-y: scroll;
+    
+    top: 15%;
+    left: 33%;
+    border-radius: 20px;
+
+    box-shadow: inset 2px 2px 100px 0px #0E1316;
+}
+
+#imagens    
+{
+    margin-top: -10px;
+}
+
 #quadrado
 {
-    background: #121618;
-    width: 97%;
-    height: 170px;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+    position: relative;
+    margin: 10px;
+    margin-left: 2%;    
+    background: #1A2327;
+    width: 95%;
+    height: 25%;
+    box-shadow: inset 2px 2px 200px 0px #0E1316;
+    border-style: none;
     border-radius: 10px;
     color: white;
-
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #0E1316;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #1f2930;    /* color of the scroll thumb */
+    border-radius: 50px;       /* roundness of the scroll thumb */
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #415461;
+  }

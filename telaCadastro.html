@@ -14,29 +14,51 @@
 
 <body>
 
-    <div class="container justify-content-center">
+
+    
+
+    <div style="background-color: #0E1316" class="container justify-content-center">
         <div id="divLogin" class="position-absolute rounded-4">
+
+            <img src="imagens/logo.png" width="50%" style="position: absolute; margin: 0px; top: -2%;">
+
+
+
             <div class="col position-absolute p-2">
-                    <h1 class="text-center text-muted">Cadastre-se!</h1>
+                    <h1 style="margin-top: 35%;" class="text-center text-muted">Cadastre-se!</h1>
                 <form action="inserir.php" method="POST">
                     
+
+                    <input type="text" class="invisible" name="foto" value="data:image/png;base64,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">
                 <br><br>
+
+
                     <div class="form-group mb-3">
                         <h5 class="text-light text-left">Usuário:</h5>
                         <input class="form-control" type="text" name="usuario" placeholder="Usuário" />
                     </div>
+
+
+
                     <div class="form-group mb-3">
                         <h5 class="text-light text-left">E-mail:</h5>
                         <input class="form-control" type="text" name="email" placeholder="E-mail" />
                     </div>
+
+
+
                     <div class="form-group mb-3">
                         <h5 class="text-light">Senha:</h5>
                         <input class="form-control" type="password" name="senha" placeholder="Senha" />
                         <small class="form-text text-muted">Nunca compartilharemos sua senha com ninguém</small>
                     </div>
+
+
                     <div class="text-center mb-2">
                         <input class="btn btn-dark" type="submit" value="Cadastre-se" />
                     </div>
+
+                    
                 </form>
 
                 <br>
@@ -50,6 +72,9 @@
 
             </div>
         </div>
+
+
+
 
 </body>
 
